@@ -28,10 +28,11 @@ header {
 
 header > .container > nav > ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 header > .container > nav > ul > li {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 header > .container > nav > ul > li > a {
@@ -82,6 +83,11 @@ header > .container > h1 {
   text-align: justify;
 }
 
+h2 {
+  font-size: 1.5em;
+  margin: 50px auto 20px auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +113,5 @@ header > .container > h1 {
 footer {
   background-color: #62c8ff;
   color: white;
-  text-align: center;
   padding: 30px;
 }

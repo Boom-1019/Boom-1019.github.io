@@ -29,10 +29,12 @@ header{
 
 header>.container>nav>ul{
 display: flex;
+justify-content: flex-end;
+
 }
 
 header>.container>nav>ul>li{
-margin-right: 30px;
+margin-left: 30px;
 }
 
 header>.container>nav>ul>li>a{
@@ -44,8 +46,6 @@ background-color: $primary-color;
 
 header>.container>nav>ul>li>a:hover{
     color: rgb(255, 255, 3);
-
-    
 
     }
 
@@ -95,6 +95,10 @@ header>.container>h1{
   }
   //*文字相關樣式結束*//
 
+h2{
+    font-size: 1.5em;
+    margin: 50px auto 20px auto;
+}
 
 .row{
     display: flex;
@@ -121,6 +125,5 @@ color: rgb(156, 156, 156);
 footer{
     background-color: $primary-color;
     color: white;
-    text-align: center;
     padding: 30px;
 }
