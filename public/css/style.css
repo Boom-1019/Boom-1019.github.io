@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -45,4 +46,22 @@ header > .container > nav > ul > li > a:hover {
 header > .container > h1 {
   color: #62c8ff;
   padding-top: 20px;
+}
+
+/*頁首樣式結束*/
+/*內容樣式開始*/
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
+}
+
+.col-4 {
+  width: 33.3333%;
+  padding: 5px;
+  box-sizing: border-box;
 }
