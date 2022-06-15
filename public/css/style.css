@@ -31,18 +31,18 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: black;
-  padding: 5px;
+  color: white;
+  padding: 6px;
   border-radius: 5px;
   letter-spacing: 2px;
+  background-color: #62c8ff;
 }
 
 header > .container > nav > ul > li > a:hover {
-  color: white;
-  background-color: #91ceff;
+  color: #ffff03;
 }
 
 header > .container > h1 {
-  color: #91ceff;
+  color: #62c8ff;
   padding-top: 20px;
 }

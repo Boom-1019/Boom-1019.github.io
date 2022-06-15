@@ -1,4 +1,4 @@
-$primary-color: rgb(145, 206, 255);
+$primary-color: rgb(98, 200, 255);
 
 *{
     margin: 0;
@@ -37,21 +37,22 @@ margin-right: 30px;
 
 header>.container>nav>ul>li>a{
 line-height: 60px;
-color: black;
-padding: 5px;
+color: rgb(255, 255, 255);
+padding: 6px;
 border-radius: 5px;
 letter-spacing: 2px;
+background-color: $primary-color;
 }
 
 header>.container>nav>ul>li>a:hover{
-    color: white;
-    background-color: $primary-color;
+    color: rgb(255, 255, 3);
+    
 
     }
 
 header>.container>h1{
     color: $primary-color;
     padding-top: 20px;
-
-
 }
+
+
