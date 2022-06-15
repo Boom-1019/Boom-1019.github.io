@@ -73,7 +73,27 @@ header>.container>h1{
     /*圓形*/
     border-radius: 100%;
 }
+//*圖片相關樣結束*//
 
+  
+//*文字相關樣式結束*//
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  //*文字相關樣式結束*//
 
 
 .row{
@@ -87,10 +107,15 @@ width: calc(100%/3 - 30px);
 margin: 0px 15px 40px 15px;/*上右下左*/
 }
 
-.text-center{
-    text-align: center;
+.title a{
+color: $primary-color;
+font-size: 1.5em;
 }
 
+.date{
+color: rgb(156, 156, 156);
+
+}
 
 /*footer開始*/
 footer{
