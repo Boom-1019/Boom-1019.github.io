@@ -1,4 +1,22 @@
+
+$primary-color: rgb(145, 167, 255);
+
 body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: aliceblue;
+    color: $primary-color;
+}
+h1{
+    color: $primary-color;
 }
 
+.btn-primary{
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+
+}
