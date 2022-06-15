@@ -71,13 +71,9 @@ header>.container>h1{
 }
 
 .col-4{
-width: 33.3333%;
-padding: 5px;
-box-sizing: border-box;
+width: calc(100%/3 - 30px);
+margin: 0px 15px 40px 15px;/*上右下左*/
 }
-
-
-
 
 /*footer開始*/
 footer{
