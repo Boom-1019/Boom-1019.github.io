@@ -58,21 +58,41 @@ header>.container>h1{
 
 /*內容樣式開始*/
 
+//*圖片相關樣式*//
 .img-fluid{
     width: 100%;
 
 }
 
+.img-rounded{
+    /*園角*/
+    border-radius: 8px;
+}
+
+.img-circle{
+    /*圓形*/
+    border-radius: 100%;
+}
+
+
+
 .row{
     display: flex;
     flex-wrap: wrap; /*換行*/
     
-
 }
 
 .col-4{
 width: calc(100%/3 - 30px);
 margin: 0px 15px 40px 15px;/*上右下左*/
+}
+
+.text-center{
+    text-align: center;
+}
+
+.title{
+
 }
 
 /*footer開始*/

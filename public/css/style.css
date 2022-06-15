@@ -56,6 +56,16 @@ header > .container > h1 {
   width: 100%;
 }
 
+.img-rounded {
+  /*園角*/
+  border-radius: 8px;
+}
+
+.img-circle {
+  /*圓形*/
+  border-radius: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +76,10 @@ header > .container > h1 {
   width: calc(100%/3 - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*footer開始*/
