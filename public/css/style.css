@@ -115,3 +115,13 @@ footer {
   color: white;
   padding: 30px;
 }
+
+dt {
+  color: #252525;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+dd a {
+  color: #605f5f;
+}
