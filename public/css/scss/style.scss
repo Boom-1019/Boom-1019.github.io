@@ -18,7 +18,7 @@ body{
 }
 
 header{
-
+    background-color: $primary-color;
 }
 
 .container{
@@ -39,19 +39,18 @@ header>.container>nav>ul>li>a{
 line-height: 60px;
 color: rgb(255, 255, 255);
 padding: 6px;
-border-radius: 5px;
-letter-spacing: 2px;
 background-color: $primary-color;
 }
 
 header>.container>nav>ul>li>a:hover{
     color: rgb(255, 255, 3);
+
     
 
     }
 
 header>.container>h1{
-    color: $primary-color;
+    color: white;
     padding-top: 20px;
 }
 
@@ -75,4 +74,15 @@ header>.container>h1{
 width: 33.3333%;
 padding: 5px;
 box-sizing: border-box;
+}
+
+
+
+
+/*footer開始*/
+footer{
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }

@@ -16,6 +16,10 @@ body {
   margin: 0px;
 }
 
+header {
+  background-color: #62c8ff;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -34,8 +38,6 @@ header > .container > nav > ul > li > a {
   line-height: 60px;
   color: white;
   padding: 6px;
-  border-radius: 5px;
-  letter-spacing: 2px;
   background-color: #62c8ff;
 }
 
@@ -44,7 +46,7 @@ header > .container > nav > ul > li > a:hover {
 }
 
 header > .container > h1 {
-  color: #62c8ff;
+  color: white;
   padding-top: 20px;
 }
 
@@ -64,4 +66,12 @@ header > .container > h1 {
   width: 33.3333%;
   padding: 5px;
   box-sizing: border-box;
+}
+
+/*footer開始*/
+footer {
+  background-color: #62c8ff;
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
