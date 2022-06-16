@@ -103,7 +103,6 @@ h2{
 .row{
     display: flex;
     flex-wrap: wrap; /*換行*/
-    
 }
 
 .col-4{
@@ -142,43 +141,62 @@ dd a{
 
 //*design-list.html內容樣式*//
 
-.path{
+.breadcrumb{
     margin: 20px 0px 0px 0px;
     color: rgb(153, 153, 153);
+    width: 100%;
 }
-.path>a{
+
+.breadcrumb>a{
     color:  rgb(153, 153, 153);
 }
 
-.container-left{
+
+.w-30{
     width: 30%;
 }
 
-.container-left>ul>li>a{
+.w-70{
+    width: 70%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.col-3{
+    width: calc(100%/4 - 30px);
+    
+}
+
+.col-9{
+    width: calc(100%/1.3333 - 30px);
+    margin: 0px 15px 0px 15px;
+}
+
+.col-3>ul>li>a{
+    display: block;
     line-height: 50px;
-    padding: 10px;
+    padding: 0px;
+    margin-bottom:20px ;
     background-color: $primary-color;
     color: white;
     border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 
-.left{
-    float: left;
+.col-3>ul>li>a:hover{
+    color: rgb(255, 255, 3);
+}
+
+.flex{
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
     margin: 50px 0 0 0;
+
 }
 
-.right{
-    width: 70%;
-    margin: auto;
-}
 
-.clearfix::after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
+
