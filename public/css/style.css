@@ -44,6 +44,7 @@ header > .container > nav > ul > li > a {
 
 header > .container > nav > ul > li > a:hover {
   color: #ffff03;
+  border-bottom: 2px solid #ffff03;
 }
 
 header > .container > h1 {
@@ -86,6 +87,7 @@ header > .container > h1 {
 h2 {
   font-size: 1.5em;
   margin: 50px auto 20px auto;
+  padding-left: 10px;
 }
 
 .row {
@@ -94,15 +96,24 @@ h2 {
   /*換行*/
 }
 
+.col-3 {
+  width: calc(100%/4 - 30px);
+}
+
 .col-4 {
   width: calc(100%/3 - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
 
+.col-9 {
+  width: calc(100%/1.3333 - 30px);
+  margin: 0px 15px 0px 15px;
+}
+
 .title a {
   color: #62c8ff;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .date {
@@ -148,15 +159,6 @@ dd a {
   width: 100%;
 }
 
-.col-3 {
-  width: calc(100%/4 - 30px);
-}
-
-.col-9 {
-  width: calc(100%/1.3333 - 30px);
-  margin: 0px 15px 0px 15px;
-}
-
 .col-3 > ul > li > a {
   display: block;
   line-height: 50px;
@@ -164,7 +166,7 @@ dd a {
   margin-bottom: 20px;
   background-color: #62c8ff;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 100%;
   text-align: center;
 }
@@ -178,4 +180,40 @@ dd a {
   flex-direction: column;
   justify-content: flex-start;
   margin: 50px 0 0 0;
+}
+
+.positionrelative {
+  position: relative;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+}
+
+.icon-new {
+  position: absolute;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #62c8ff;
+  border-radius: 100%;
+  left: 5px;
+  top: 5px;
+  color: white;
 }
