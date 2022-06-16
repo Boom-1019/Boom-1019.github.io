@@ -143,19 +143,24 @@ dd a{
 //*design-list.html內容樣式*//
 
 .path{
-    margin: 20px 0px 0 60px;
-    color: rgb(153, 153, 153)9, 99);
+    margin: 20px 0px 0px 0px;
+    color: rgb(153, 153, 153);
 }
 .path>a{
-    color:  rgb(153, 153, 153)9, 99);
+    color:  rgb(153, 153, 153);
 }
 
-.container2{
-    width: 60%;
-    margin: auto;
-
+.container-left{
+    width: 30%;
 }
 
+.container-left>ul>li>a{
+    line-height: 50px;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 10px;
+}
 
 .left{
     float: left;
@@ -165,13 +170,15 @@ dd a{
     margin: 50px 0 0 0;
 }
 
+.right{
+    width: 70%;
+    margin: auto;
+}
 
-.container>ul>li>a{
-    line-height: 50px;
-    padding: 10px;
-    background-color: $primary-color;
-    color: white;
-    border-radius: 10px;
-    
-    
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
