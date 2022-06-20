@@ -39,20 +39,22 @@ margin-left: 30px;
 header>.container>nav>ul>li>a{
 line-height: 60px;
 color: rgb(255, 255, 255);
-padding: 6px;
+padding: 3px;
 background-color: $primary-color;
 }
 
 header>.container>nav>ul>li>a:hover{
     color: rgb(255, 255, 3);
     border-bottom: 2px solid rgb(255, 255, 3) ;
+}
 
-    }
+header>.container>h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
 header>.container>h1>a{
-    display: block;
     color: white;
-    padding-top: 20px;
 }
 
 /*頁首樣式結束*/
@@ -244,3 +246,65 @@ vertical-align: top;
     top: 5px;    
     color: white;
 }
+
+//*超過768px以上執行*//
+@media (min-width:768px){
+    .icon-menu{
+        display: none;
+    }
+
+}//*超過768px以上執行 
+
+//*小於767px執行*//
+@media (max-width:767px){
+
+    h1{
+        width: 85%;
+        float: left;
+        
+        
+    }
+    .icon-menu{
+        float: right;
+        display: block;
+        width: 15%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        line-height: 73px;
+        text-align: center;
+      
+    }
+
+    header>.container>nav{
+        width: 100%;
+        float: left;
+        display: none;
+    }
+
+    header>.container>nav.active{
+        display: block;
+    }
+
+    header>.container>nav>ul{
+        display: block;
+    }
+
+    header>nav>ul>li{
+        width: 100%;
+    }
+
+    header>.container>nav>ul>li>a{
+        display: block;
+        text-align: center;
+    }
+
+    header>.container>nav>ul>li>a:hover{
+        color: rgb(255, 255, 3);
+        border-bottom: none;
+        }
+    .overflow-hidden{
+        overflow: hidden;
+    }
+
+
+}//*小於767px執行*//

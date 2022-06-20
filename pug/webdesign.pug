@@ -1,0 +1,140 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 網頁設計|0615練習
+    link(rel='stylesheet' href='public/css/style.css')
+  body
+    // 頁首
+    header
+      .container
+        h1
+          a(href='index.html') 作品集
+        nav
+          ul
+            li
+              a(href='#') 關於我
+            li
+              a(href='design-list.html') 設計作品
+            li
+              a(href='webdesign.html') 網頁作品
+            li
+              a(href='#') 聯絡我
+    // 頁首結尾
+    // 內容
+    .container
+      .row
+        // 麵包屑
+        .breadcrumb
+          a(href='index.html') 首頁
+          span >
+          a(href='webdesign.html') 網頁作品
+          span >
+          a(href='#') 作品內頁
+        // 左列表
+        aside.col-3
+          ul
+            li
+              a.btn-primary(href='#') 作品a
+            li
+              a.btn-primary(href='#') 作品b
+            li
+              a.btn-primary(href='#') 作品c
+            li
+              a.btn-primary(href='#') 作品d
+        // 右欄位
+        main.col-9
+          h2.text-left 作品
+          .row
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                  img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                  span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題1
+              p.date.text-center 20220615
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                  img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                  span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題2
+              p.date.text-center 20220615
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                  img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                  span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題3
+              p.date.text-center 20220615
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                  img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題4
+              p.date.text-center 20220615
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                  img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題3
+              p.date.text-center 20220615
+            .col-6
+              a.img-wrap(href='#')
+              .img-overlay
+                a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題4
+              p.date.text-center 20220615
+    // 內容結束
+    // 頁尾開始
+    footer
+      .container
+        .row
+          dl.col-4.text-center
+            dt title01
+            dd
+              a(href='#') 名稱01
+            dd
+              a(href='#') 名稱02
+            dd
+              a(href='#') 名稱03
+            dd
+              a(href='#') 名稱04
+          dl.col-4.text-center
+            dt title02
+            dd
+              a(href='#') 名稱01
+            dd
+              a(href='#') 名稱02
+            dd
+              a(href='#') 名稱03
+            dd
+              a(href='#') 名稱04
+          dl.col-4.text-center
+            dt title03
+            dd
+              a(href='#') 名稱01
+            dd
+              a(href='#') 名稱02
+            dd
+              a(href='#') 名稱03
+            dd
+              a(href='#') 名稱04
+        p.text-center
+          | copyright@職訓課程使用，不做任何商業用途
