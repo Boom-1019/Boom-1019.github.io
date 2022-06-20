@@ -104,37 +104,116 @@ header>.container>h1>a{
     flex-wrap: wrap; /*換行*/
 }
 
-// 四欄式
-.col-3{
-    width: calc(100% / 4 - 30px);
-    margin:0px 15px 40px 15px;
-    /*上右下左*/
-}
 
-//*三欄式
-.col-4{
-    width: calc(100% / 3 - 30px);
-    margin:0px 15px 40px 15px;/*上右下左*/
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
     }
-
-// 兩欄式
-.col-6{
-    width: calc(100% / 2 - 30px);
-    margin:0px 15px 40px 15px;
-    /*上右下左*/
 }
 
-.col-8{
-    width: calc(100% / 1.5 - 30px);
-    margin:0px 15px 40px 15px;
-    /*上右下左*/
-}
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 768px end
 
-.col-9{
-    width: calc(100% / 1.333333333 - 30px);
-    margin:0px 15px 40px 15px;
-}
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 1200px end
 
+// .col-3{
+//     width: calc(100% / 4 - 30px);
+//     margin:0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+// .col-4{
+//     width: calc(100% / 3 - 30px);
+//     margin:0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+// .col-6{
+//     width: calc(100% / 2 - 30px);
+//     margin:0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+// .col-8{
+//     width: calc(100% / 1.5 - 30px);
+//     margin:0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+// .col-9{
+//     width: calc(100% / 1.33333333333 - 30px);
+//     margin:0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+
+// @media (min-width:768px){
+//     .col-md-3{
+//         width: calc(100% / 4 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-md-4{
+//         width: calc(100% / 3 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-md-6{
+//         width: calc(100% / 2 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-md-8{
+//         width: calc(100% / 1.5 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-md-9{
+//         width: calc(100% / 1.33333333333 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+// }
+
+// @media (min-width:1200px){
+//     .col-lg-3{
+//         width: calc(100% / 4 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-lg-4{
+//         width: calc(100% / 3 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-lg-6{
+//         width: calc(100% / 2 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-lg-8{
+//         width: calc(100% / 1.5 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+//     .col-lg-9{
+//         width: calc(100% / 1.33333333333 - 30px);
+//         margin:0px 15px 40px 15px;
+//         /*上右下左*/
+//     }
+// }
 
 h2{
     font-size: 1.5em;
@@ -269,7 +348,7 @@ vertical-align: top;
         display: block;
         width: 15%;
         background-color: rgb(255, 255, 255);
-        color: black;
+        color: $primary-color;
         line-height: 73px;
         text-align: center;
       
@@ -306,5 +385,18 @@ vertical-align: top;
         overflow: hidden;
     }
 
-
 }//*小於767px執行*//
+
+
+//for迴圈 從1到3
+@for $i from 1 through 3{
+    .mb-#{$i}{
+        margin-bottom: $i*1em;
+    }
+}
+
+@for $i from 1 through 3{
+    .fz-#{$i}{
+        font-size: $i*1em;
+    }
+}
