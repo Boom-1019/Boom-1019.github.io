@@ -60,6 +60,39 @@ header>.container>.row>h1>a{
 
 /*頁首樣式結束*/
 
+//視窗大於768px
+@media(min-width:768px){
+    header.container nav{
+        width: 100%;
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        background: rgba(122, 203, 248, 0.842);
+        width: 100%;
+        left: 0px;
+        top: 62px;
+        padding: 10px;
+        display: none;
+    }
+
+    .submenu>li{
+        line-height: 40px;
+    }
+
+    .submenu>li>a{
+        color: white;
+    }
+
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+
+}//大於768px end
+
+
 /*內容樣式開始*/
 
 //*圖片相關樣式*//
@@ -385,7 +418,7 @@ vertical-align: top;
 
     nav{
         left: -6vw;
-        // left: -110vw;
+        left: -110vw;
         transition: left .3s;
     }
 
