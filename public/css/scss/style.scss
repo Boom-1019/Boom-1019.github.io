@@ -29,7 +29,7 @@ header{
 
 header>.container nav>ul{
 display: flex;
-justify-content: flex-end;
+// justify-content: flex-end;
 }
 
 header>.container nav>ul>li{
@@ -49,12 +49,12 @@ header>.container nav>ul>li>a:hover{
     border-bottom: 2px solid rgb(255, 255, 3) ;
 }
 
-header>.container>.row>h1{
+header>.container h1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-header>.container>.row>h1>a{
+header>.container h1>a{
     color: white;
 }
 
@@ -62,18 +62,44 @@ header>.container>.row>h1>a{
 
 //視窗大於768px
 @media(min-width:768px){
-    header.container nav{
+    header>.container nav{
         width: 100%;
     }
     header>.container nav>ul>li{
         position: relative;
     }
+
+    header h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        //子層h1(LOGO)絕對定位 置中(父層header設定相對定位)//
+    }
+
+    header{
+        position: relative;
+    }
+
+    header nav{
+    display: flex;
+    justify-content: center;
+    }
+
+    header>.container nav>ul>li{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 200px;
+    }
+
     .submenu{
         position: absolute;
         background: rgba(122, 203, 248, 0.842);
         width: 100%;
         left: 0px;
-        top: 62px;
+        top: 60px;
         padding: 10px;
         display: none;
     }
@@ -92,6 +118,10 @@ header>.container>.row>h1>a{
 
 }//大於768px end
 
+//大於1200px
+@media(min-width:768px){
+
+}//大於1200px
 
 /*內容樣式開始*/
 
@@ -172,88 +202,6 @@ header>.container>.row>h1>a{
     order: -1;
     }
 }
-
-// .col-3{
-//     width: calc(100% / 4 - 30px);
-//     margin:0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-// .col-4{
-//     width: calc(100% / 3 - 30px);
-//     margin:0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-// .col-6{
-//     width: calc(100% / 2 - 30px);
-//     margin:0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-// .col-8{
-//     width: calc(100% / 1.5 - 30px);
-//     margin:0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-// .col-9{
-//     width: calc(100% / 1.33333333333 - 30px);
-//     margin:0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-
-// @media (min-width:768px){
-//     .col-md-3{
-//         width: calc(100% / 4 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-md-4{
-//         width: calc(100% / 3 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-md-6{
-//         width: calc(100% / 2 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-md-8{
-//         width: calc(100% / 1.5 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-md-9{
-//         width: calc(100% / 1.33333333333 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-// }
-
-// @media (min-width:1200px){
-//     .col-lg-3{
-//         width: calc(100% / 4 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-lg-4{
-//         width: calc(100% / 3 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-lg-6{
-//         width: calc(100% / 2 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-lg-8{
-//         width: calc(100% / 1.5 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-//     .col-lg-9{
-//         width: calc(100% / 1.33333333333 - 30px);
-//         margin:0px 15px 40px 15px;
-//         /*上右下左*/
-//     }
-// }
 
 h2{
     font-size: 1.5em;
@@ -410,9 +358,15 @@ vertical-align: top;
         // float: left;
         // display: none;
 
-        //蓋板
+        // 需要蓋板的話打開以下程式碼
+        // position: fixed;
+        // top:0px;
+        // height: 100vh;
+        // z-index: 999;
 
-        //上往下出現覽列
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height:0px;
+        // overflow: hidden;
 
     }
 

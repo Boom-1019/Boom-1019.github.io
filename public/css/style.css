@@ -28,7 +28,6 @@ header {
 
 header > .container nav > ul {
   display: flex;
-  justify-content: flex-end;
 }
 
 header > .container nav > ul > li {
@@ -46,18 +45,18 @@ header > .container nav > ul > li > a:hover {
   border-bottom: 2px solid #ffff03;
 }
 
-header > .container > .row > h1 {
+header > .container h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-header > .container > .row > h1 > a {
+header > .container h1 > a {
   color: white;
 }
 
 /*頁首樣式結束*/
 @media (min-width: 768px) {
-  header.container nav {
+  header > .container nav {
     width: 100%;
   }
 
@@ -65,12 +64,36 @@ header > .container > .row > h1 > a {
     position: relative;
   }
 
+  header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 200px;
+  }
+
   .submenu {
     position: absolute;
     background: rgba(122, 203, 248, 0.842);
     width: 100%;
     left: 0px;
-    top: 62px;
+    top: 60px;
     padding: 10px;
     display: none;
   }
