@@ -41,7 +41,7 @@ line-height: 60px;
 color: rgb(255, 255, 255);
 // padding: 3px;
 background-color: $primary-color;
-opacity: calc(0.95);
+// opacity: calc(0.95);
 }
 
 header>.container nav>ul>li>a:hover{
@@ -376,17 +376,22 @@ vertical-align: top;
         top: 73px;
         // float: left;
         // display: none;
+
+        //蓋板
+
+        //上往下出現覽列
+
     }
 
     nav{
         left: -6vw;
-        left: -110vw;
+        // left: -110vw;
         transition: left .3s;
     }
 
     .icon-menu:hover + nav{
         left: -6vw;
-        
+
     }
 
     header>.container nav.active{
@@ -411,6 +416,25 @@ vertical-align: top;
         color: rgb(255, 255, 3);
         border-bottom: none;
         }
+
+
+    .submenu{
+        display: none;
+        background: rgba(139, 213, 253, 0.954);
+    }
+
+    header > .container nav > ul > li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom:1px solid rgb(255, 255, 255);
+    }
+    .submenu>li>a{
+        color: rgb(6, 6, 6);
+        display: block;
+        text-align: center;
+    }
 
     // .overflow-hidden{
     //     overflow: hidden;

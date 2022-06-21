@@ -39,7 +39,6 @@ header > .container nav > ul > li > a {
   line-height: 60px;
   color: white;
   background-color: #62c8ff;
-  opacity: calc(0.95);
 }
 
 header > .container nav > ul > li > a:hover {
@@ -449,7 +448,6 @@ dd a {
 
   nav {
     left: -6vw;
-    left: -110vw;
     transition: left 0.3s;
   }
 
@@ -478,6 +476,26 @@ dd a {
   header > .container nav > ul > li > a:hover {
     color: #ffff03;
     border-bottom: none;
+  }
+
+  .submenu {
+    display: none;
+    background: rgba(139, 213, 253, 0.954);
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px solid white;
+  }
+
+  .submenu > li > a {
+    color: #060606;
+    display: block;
+    text-align: center;
   }
 }
 .mb-1 {
