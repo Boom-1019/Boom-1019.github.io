@@ -7,22 +7,23 @@ head
   link(rel='stylesheet' href='public/css/style.css')
 body
   // 頁首
-  header.overflow-hidden
+  header
     .container
-      a.icon-menu(href="#") menu
-      h1
-        a(href='index.html') 作品集
-      nav
-        ul
-          li
-            a(href='aboutus.html') 關於我
-          li
-            a(href='design-list.html') 設計作品
-          li
-            a(href='webdesign.html') 網頁作品
-          li
-            a(href='#') 聯絡我
-          // 頁首結尾
+      .row.flex-space-between
+        h1
+          a(href='index.html') 作品集
+        a.icon-menu(href="#") menu
+        nav
+          ul
+            li
+              a(href='aboutus.html') 關於我
+            li
+              a(href='design-list.html') 設計作品
+            li
+              a(href='webdesign.html') 網頁作品
+            li
+              a(href='#') 聯絡我
+            // 頁首結尾
   img.img-fluid(src='https://placem.at/place?w=1920&h=480\
   ' alt='')
   // 內容

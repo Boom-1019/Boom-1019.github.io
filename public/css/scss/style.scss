@@ -27,33 +27,34 @@ header{
     background-color: $primary-color;
 }
 
-header>.container>nav>ul{
+header>.container nav>ul{
 display: flex;
 justify-content: flex-end;
 }
 
-header>.container>nav>ul>li{
+header>.container nav>ul>li{
 margin-left: 30px;
 }
 
-header>.container>nav>ul>li>a{
+header>.container nav>ul>li>a{
 line-height: 60px;
 color: rgb(255, 255, 255);
-padding: 3px;
+// padding: 3px;
 background-color: $primary-color;
+opacity: calc(0.95);
 }
 
-header>.container>nav>ul>li>a:hover{
+header>.container nav>ul>li>a:hover{
     color: rgb(255, 255, 3);
     border-bottom: 2px solid rgb(255, 255, 3) ;
 }
 
-header>.container>h1{
-    padding-top: 20px;
+header>.container>.row>h1{
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
-header>.container>h1>a{
+header>.container>.row>h1>a{
     color: white;
 }
 
@@ -68,7 +69,7 @@ header>.container>h1>a{
 }
 
 .img-rounded{
-    /*園角*/
+    /*圓角*/
     border-radius: 8px;
 }
 
@@ -340,17 +341,22 @@ vertical-align: top;
 
 }//*超過768px以上執行 
 
-//*小於767px執行*//
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+//*小於767px執行(手機板)*//
 @media (max-width:767px){
 
-    h1{
-        width: 85%;
-        float: left;
-        
-        
-    }
+    // h1{
+    //     width: 85%;
+    //     // float: left;    
+    // }
+
     .icon-menu{
-        float: right;
+        // float: right;
         display: block;
         width: 15%;
         background-color: rgb(255, 255, 255);
@@ -360,36 +366,55 @@ vertical-align: top;
       
     }
 
-    header>.container>nav{
-        width: 100%;
-        float: left;
-        display: none;
+    header{
+        position: relative;
     }
 
-    header>.container>nav.active{
+    header>.container nav{
+        width: 100%;
+        position: absolute;
+        top: 73px;
+        // float: left;
+        // display: none;
+    }
+
+    nav{
+        left: -6vw;
+        left: -110vw;
+        transition: left .3s;
+    }
+
+    .icon-menu:hover + nav{
+        left: -6vw;
+        
+    }
+
+    header>.container nav.active{
         display: block;
     }
 
-    header>.container>nav>ul{
+    header>.container nav>ul{
         display: block;
     }
 
-    header>nav>ul>li{
+    header>.container nav>ul>li{
         width: 100%;
+        border-bottom: 1px solid rgb(250, 250, 250);
     }
 
-    header>.container>nav>ul>li>a{
+    header>.container nav>ul>li>a{
         display: block;
         text-align: center;
     }
 
-    header>.container>nav>ul>li>a:hover{
+    header>.container nav>ul>li>a:hover{
         color: rgb(255, 255, 3);
         border-bottom: none;
         }
-    .overflow-hidden{
-        overflow: hidden;
-    }
+
+    // .overflow-hidden{
+    //     overflow: hidden;
+    // }
 
 }//*小於767px執行*//
 
