@@ -501,13 +501,13 @@ dd a {
   }
 
   nav {
-    left: -6vw;
+    left: -vw;
     left: -110vw;
     transition: left 0.3s;
   }
 
   nav.active {
-    left: -6px;
+    left: -6vw;
   }
 
   header > .container nav.active {
