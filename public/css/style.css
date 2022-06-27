@@ -506,8 +506,8 @@ dd a {
     transition: left 0.3s;
   }
 
-  .icon-menu:hover + nav {
-    left: -6vw;
+  nav.active {
+    left: -6px;
   }
 
   header > .container nav.active {
